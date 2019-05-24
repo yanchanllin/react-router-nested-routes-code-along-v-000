@@ -10,7 +10,7 @@ const MoviesPage = ({ match, movies }) => (
     <Route exact path={match.url} render={()=> (
       <h3>Please select a movie from the list.</h3>
     )} />
-    <Route path={'${match.url}/:movieId'} render={routerProps => <MovieShow movies={movies} 
+    <Route path={'${match.url}/:movieId'} render={routerProps => <MovieShow movies={movies}
     {...routerProps} /> } />
   </div>;
 
